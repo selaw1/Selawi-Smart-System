@@ -1,0 +1,21 @@
+# Normalize all text to LF in the repo and on checkout, so the bash scripts
+# (parse-refs.sh, verify-gitignore.sh, dogfood.sh) work on Windows clones even
+# when the user's git has core.autocrlf=true. CRLF in a `#!/usr/bin/env bash`
+# script breaks it under Git Bash / WSL ($'\r': command not found).
+* text=auto eol=lf
+
+# Shell scripts and markdown are always LF.
+*.sh   text eol=lf
+*.md   text eol=lf
+
+# If any Windows-native scripts are ever added, keep them CRLF.
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# Common binaries — never touch these.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.pdf  binary

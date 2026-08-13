@@ -46,6 +46,34 @@ cd "Selawi Smart System"
 Machine-specific Claude Code config goes in the **gitignored** `.claude/settings.local.json`
 — never in the tracked `.claude/settings.json`.
 
+### Windows (native — no WSL)
+
+S³ runs on **native Windows**; you do not need WSL. Claude Code and the framework's helper
+scripts both use the **bash that ships with Git for Windows**, so the only requirement is to
+have Git for Windows installed — everything else is identical to macOS/Linux.
+
+1. Install **[Node.js LTS](https://nodejs.org)** (for Claude Code) and
+   **[Git for Windows](https://git-scm.com/download/win)** (supplies `git` **and** the
+   `bash.exe` Claude Code shells out to).
+2. Install Claude Code: `npm install -g @anthropic-ai/claude-code`.
+3. If Claude Code doesn't auto-detect Git Bash, point it there once — set
+   `CLAUDE_CODE_GIT_BASH_PATH` to your `bash.exe`, then reopen the terminal:
+   ```powershell
+   setx CLAUDE_CODE_GIT_BASH_PATH "C:\Program Files\Git\bin\bash.exe"
+   ```
+4. Clone and enter the repo from Windows Terminal / PowerShell:
+   ```powershell
+   git clone <this-repo-url> "Selawi Smart System"
+   cd "Selawi Smart System"
+   ```
+   The tracked `.gitattributes` forces **LF** line endings, so the `.sh` helpers run even with
+   Git's default `core.autocrlf=true` — no extra config needed.
+5. Run `claude` in that folder and start with `/project-setup`.
+
+The agents run bash through Claude Code's Bash tool, which uses Git Bash on Windows
+automatically — so the `parse-refs.sh` / `verify-gitignore.sh` steps behave exactly as they do
+on Linux.
+
 ## New project
 
 Run the one-time interview inside Claude Code:
