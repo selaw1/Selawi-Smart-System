@@ -1,5 +1,9 @@
 # Selawi Smart System (S³)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/tag/selaw1/Selawi-Smart-System?label=release&color=green)](https://github.com/selaw1/Selawi-Smart-System/tags)
+[![Built for Claude Code](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2.svg)](https://docs.claude.com/claude-code)
+
 A standalone, reusable, git-distributable **multi-agent workspace framework** for any tech
 stack. A `/project-setup` interview turns this skeleton into a configured, pull-safe
 workspace: a Manager agent triages requests, specialist agents implement, and an Obsidian
