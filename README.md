@@ -31,6 +31,7 @@ pulling a new framework version never clobbers your project's content. See "Upda
 |---|---|---|---|
 | Claude Code | Required | Runs the agents and skills | https://docs.claude.com/claude-code |
 | Superpowers plugin | Required | Planning / execution / subagent skills | https://github.com/obra/superpowers |
+| ECC skills | Optional | Advisory review/build/implementation subagents the agents can consult (the `## Recommended` blocks in each `docs/<domain>/skills.md` suggest matches) | https://github.com/affaan-m/ECC |
 | RTK | Optional | Terminal-output compression proxy (token savings) | see `docs/workflow/rtk.md` |
 | PXPipe | Optional | Context/transport compression | see `docs/workflow/pxpipe.md` |
 | Obsidian | Optional | Browse the vault as a linked second brain | https://obsidian.md |

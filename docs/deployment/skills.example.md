@@ -14,6 +14,18 @@ Every entry below is **advisory**: a skill or subagent suggestion is informative
 output conflicts with the house conventions in this domain's other docs (infrastructure, CI/CD,
 release checklist), the house conventions win — unless you list it under "Authoritative Overrides".
 
+<!-- prompt: RECOMMENDED starting skills for these roles, generalized from a working setup.
+     /project-setup proposes concrete matches from whatever skill marketplaces you have
+     installed (e.g. ECC subagents). Keep, drop, or swap any of them; move the ones you adopt
+     down into the sections below. -->
+## Recommended
+
+<!--
+- build-error resolvers matching your backend and frontend stacks (e.g. the ECC `<stack>-build-resolver`)
+- a security reviewer for pipeline/config and the release surface (e.g. ECC `security-reviewer`)
+- a store-compliance review skill before a mobile submission (e.g. `mobile-store-review`)
+-->
+
 <!-- prompt: implementation/generation skills this role should invoke, each with a when-to-use
      trigger. Example: "- pipeline/config helper — when changing CI/CD or infra config." -->
 ## Skills

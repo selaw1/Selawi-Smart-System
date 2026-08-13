@@ -34,6 +34,13 @@ For each chosen agent file, run `lib/parse-refs.sh agents/<Agent>.md` to get its
 Only materialize the templates the chosen agents actually reference — this is why setup is
 driven by `parse-refs`, not a blanket copy.
 
+When a `docs/<domain>/skills.md` template has a `## Recommended` block, read its role-based
+suggestions and, using the stack from Step 4, propose concrete matching skills from whatever
+marketplaces the user has installed (e.g. ECC subagents, Taste skills) — e.g. a backend
+`<stack>-reviewer`, a `<stack>-build-resolver`. Wire the ones the user accepts into the
+`## Skills` / `## Review Subagents` sections; leave the rest out. These are suggestions, not
+defaults — never wire a skill the user didn't confirm, and never assume a marketplace is installed.
+
 ## Step 4 — Project profile
 
 Fill `docs/product/project-profile.md` from `docs/product/project-profile.example.md`,
