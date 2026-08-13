@@ -1,0 +1,41 @@
+# --- S³ .gitignore -------------------------------------------------
+# Tier rule: ignore FILLED project files; KEEP *.example.md templates.
+
+# Filled project docs (any *.md that has/where an *.example.md is the template)
+docs/**/*.md
+!docs/**/*.example.md
+# Framework workflow docs are authored directly (not templated) — keep them:
+!docs/workflow/**
+
+# Filled memory (keep the templates)
+memory/*.md
+!memory/*.example.md
+
+# Filled project profile import target lives in docs/product (already covered above)
+
+# Task state (keep the dir via .gitkeep)
+tasks/active/*
+tasks/backlog/*
+tasks/completed/*
+!tasks/**/.gitkeep
+
+# Knowledge content (keep the category dirs via .gitkeep)
+knowledge/**
+!knowledge/**/
+!knowledge/**/.gitkeep
+
+# Secrets: everything except the folder's own .gitignore
+secrets/**
+!secrets/.gitignore
+!secrets/README.example.md
+
+# Local / machine-specific
+.claude/settings.local.json
+.obsidian/
+
+# Nested product repos — their own .git means they must never be staged
+# by this framework repo. `/Backend/` and `/Frontend/` are sensible defaults;
+# if your product repos live in differently-named folders, rename these two
+# lines to match (or run /project-setup, which registers the correct names).
+/Backend/
+/Frontend/
