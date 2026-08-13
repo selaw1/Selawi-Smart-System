@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/frontend/design-system.md
+@docs/frontend/skills.md
 @docs/product/product-context.md
 
 ## Mission
@@ -49,7 +50,7 @@ Before defining or reviewing any visual or interaction pattern, this role reads:
 4. Hand any implementation work to the client-facing implementation role, with the pattern and rationale documented clearly enough to build from.
 5. Review the resulting implementation against the intended pattern once it exists, in every supported theme and text direction.
 6. Update the design system documentation if the pattern is new or the existing one changed deliberately.
-7. A review/analysis subagent may be consulted as an advisory second opinion on the design; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+7. Consult the skills and review subagents declared in `@docs/frontend/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 8. Append a `## Report` section to the task file: what was defined or reviewed, documentation updated, and any open questions.
 
 ## Completion Checklist

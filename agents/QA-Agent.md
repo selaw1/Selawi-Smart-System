@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/qa/testing-strategy.md
+@docs/qa/skills.md
 @docs/backend/conventions.md
 @docs/frontend/stack.md
 
@@ -50,7 +51,7 @@ Before verifying any change, this role reads:
 4. Exercise the changed behavior directly: run the relevant automated checks and drive the actual flow where automated coverage does not exist yet.
 5. Record exactly what was observed at each step, including any step that could not be run and why.
 6. If verification surfaces a defect, report it to the owning role in the task file rather than fixing it directly.
-7. A review/analysis subagent may be consulted as an advisory second opinion on test coverage or risk; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+7. Consult the skills and review subagents declared in `@docs/qa/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 8. Append a `## Report` section to the task file: what was verified, how, what was observed, and any open questions.
 
 ## Completion Checklist

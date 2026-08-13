@@ -5,6 +5,7 @@
 @docs/backend/stack.md
 @docs/backend/conventions.md
 @docs/backend/api-patterns.md
+@docs/backend/skills.md
 @docs/database/schema.md
 
 ## Mission
@@ -53,7 +54,7 @@ Before implementing or modifying any server-side behavior, this role reads:
 5. If the change affects the persisted data model, hand off to the data-layer role rather than editing the schema directly.
 6. Keep the published contract/schema in sync with the implementation; regenerate any derived artifact rather than hand-editing it.
 7. Run the verification commands the house conventions specify and exercise the changed behavior directly, not just by inspection.
-8. A review/analysis subagent may be consulted as an advisory second opinion on the change; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+8. Consult the skills and review subagents declared in `@docs/backend/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 9. Append a `## Report` section to the task file: what changed, files touched, how it was verified, and any open questions.
 
 ## Completion Checklist

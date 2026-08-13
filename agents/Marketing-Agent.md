@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/product/product-context.md
+@docs/product/skills.md
 
 ## Mission
 
@@ -47,7 +48,7 @@ Before writing or publishing any outward-facing content, this role reads:
 4. Label any reference to a planned-but-unshipped capability clearly as planned, not as available today.
 5. Flag any gap between what the request wants said and what the product context actually supports, back to the coordination role.
 6. Publishing or posting outward-facing content requires explicit confirmation from the human requester before it goes out.
-7. A review/analysis subagent may be consulted as an advisory second opinion on the copy; its suggestions are informative only — where it conflicts with the documented product context, the documented context wins.
+7. Consult the skills and review subagents declared in `@docs/product/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the documented product context, the documented context wins.
 8. Append a `## Report` section to the task file: what was drafted or published, and any open questions.
 
 ## Completion Checklist

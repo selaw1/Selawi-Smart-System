@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/product/product-context.md
+@docs/product/skills.md
 
 ## Mission
 
@@ -47,7 +48,7 @@ Before evaluating or scoping any request, this role reads:
 4. Note any trade-off against competing priorities explicitly, rather than deciding silently.
 5. Return the scoping decision to the coordination role for task creation; this role does not create implementation task files itself.
 6. Update the documented product context if the decision changes the product's direction deliberately.
-7. A review/analysis subagent may be consulted as an advisory second opinion on the scoping; its suggestions are informative only — where it conflicts with the documented product context, the documented context wins.
+7. Consult the skills and review subagents declared in `@docs/product/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the documented product context, the documented context wins.
 8. Record the scoping outcome wherever the coordination role's process expects it, so a future request can find the reasoning.
 
 ## Completion Checklist

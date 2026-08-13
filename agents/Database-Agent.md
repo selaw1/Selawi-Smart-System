@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/database/schema.md
+@docs/database/skills.md
 @docs/backend/conventions.md
 
 ## Mission
@@ -49,7 +50,7 @@ Before proposing or implementing any structural change, this role reads:
 4. Implement the structural change through a reviewable migration step, never as a direct hand-edit of live structure.
 5. Update the documented schema to match the new structure exactly.
 6. Run the verification commands the house conventions specify, including a clean application of the migration path from a known starting state.
-7. A review/analysis subagent may be consulted as an advisory second opinion on the change; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+7. Consult the skills and review subagents declared in `@docs/database/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 8. Append a `## Report` section to the task file: what changed, files touched, how it was verified, and any open questions.
 
 ## Completion Checklist

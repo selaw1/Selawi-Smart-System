@@ -20,6 +20,13 @@ elaborates both without adding new rules.
   implement, verify, document, and report back inside the task file. Each task has exactly
   one specialist owner.
 
+Each specialist role also `@`-references a `docs/<domain>/skills.md` document listing the
+reusable skills and review/analysis subagents that role may invoke (e.g. a design-taste helper
+or a code reviewer). That doc — not the role file — is where a user wires a role to its tooling;
+`/project-setup` materializes it from `skills.example.md`. Listed skills are advisory: where a
+skill's output conflicts with the house conventions in the role's referenced docs, the docs win.
+The Manager references no skills doc.
+
 ## The Core Pipeline
 
 Every piece of work — no matter how small — moves through the same seven stages, with no

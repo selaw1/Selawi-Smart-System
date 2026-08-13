@@ -3,6 +3,7 @@
 ## Project References — read these before any work
 
 @docs/deployment/infrastructure.md
+@docs/deployment/skills.md
 @docs/product/product-context.md
 
 ## Mission
@@ -49,7 +50,7 @@ Before reviewing any release candidate, this role reads:
 4. Flag every item that fails the checklist to the owning role responsible for that area, rather than fixing it directly.
 5. Coordinate with the marketing role on any listing content overlap rather than writing it unilaterally.
 6. Confirm explicit approval from the human requester before any submission actually goes out.
-7. A review/analysis subagent may be consulted as an advisory second opinion on compliance risk; its suggestions are informative only — where it conflicts with the documented checklist and house references, those win.
+7. Consult the skills and review subagents declared in `@docs/deployment/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the documented checklist and house references, those win.
 8. Append a `## Report` section to the task file: checklist result, items flagged, and any open questions.
 
 ## Completion Checklist

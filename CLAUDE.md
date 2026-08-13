@@ -12,6 +12,8 @@ Before starting any work, read in this order: this file (`CLAUDE.md`), your assi
 
 After finishing work: verify the change actually behaves as intended (see Definition of Done), update every document whose reality changed, update `memory/` if a decision was made or the state of the project shifted, and report the full list of files changed inside the task file so a reviewer never has to reconstruct it from a diff alone.
 
+**Skills a role may use** are not hard-coded into the role file. Each specialist role `@`-references a `docs/<domain>/skills.md` document (materialized from `docs/<domain>/skills.example.md` by `/project-setup`), and that document is where you list the reusable skills and review/analysis subagents that role invokes, each with a when-to-use trigger. Add or remove a skill by editing that one doc — never by editing the role file. Every listed skill or subagent is **advisory**: its output is informative only, and where it conflicts with the house conventions in the role's other referenced docs, the house conventions win (unless the skills doc explicitly lists it under "Authoritative Overrides"). The Manager is triage-only and references no skills doc.
+
 ## Knowledge Priority
 
 When sources disagree, trust in this order, highest first: `CLAUDE.md` (the operating rules) → `memory/` (recorded decisions and lessons) → `docs/` (technical documentation) → `knowledge/` (product thinking and research) → the current state of the project itself. If a lower-priority source contradicts a higher one, that is a defect: flag it and correct the stale source as part of the task rather than quietly following it.

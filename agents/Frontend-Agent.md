@@ -6,6 +6,7 @@
 @docs/frontend/design-system.md
 @docs/frontend/state-management.md
 @docs/frontend/i18n.md
+@docs/frontend/skills.md
 
 ## Mission
 
@@ -53,7 +54,7 @@ Before implementing or modifying any client-facing behavior, this role reads:
 5. Add every new user-facing string to every supported language's translation entries.
 6. If the change reshapes data the rest of the interface depends on, refresh the shared client-side context after the mutation.
 7. Run the verification commands the house conventions specify and drive the changed flow directly in a running interface, in every supported theme and text direction if layout was touched.
-8. A review/analysis subagent may be consulted as an advisory second opinion on the change; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+8. Consult the skills and review subagents declared in `@docs/frontend/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 9. Append a `## Report` section to the task file: what changed, files touched, how it was verified, and any open questions.
 
 ## Completion Checklist

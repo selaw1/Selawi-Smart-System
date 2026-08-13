@@ -4,6 +4,7 @@
 
 @docs/deployment/infrastructure.md
 @docs/deployment/ci-cd.md
+@docs/deployment/skills.md
 
 ## Mission
 
@@ -49,7 +50,7 @@ Before changing any infrastructure or pipeline configuration, this role reads:
 4. Implement the change as a reviewable, tracked configuration change — never a manual step performed only once outside the pipeline.
 5. Confirm no actual secret or environment-specific value is written into any tracked file.
 6. Run the verification commands the house conventions specify, and exercise the pipeline stage end to end where feasible.
-7. A review/analysis subagent may be consulted as an advisory second opinion on the change; its suggestions are informative only — where it conflicts with the house conventions in the referenced docs, the house conventions win.
+7. Consult the skills and review subagents declared in `@docs/deployment/skills.md` where they apply; their output is advisory — where a suggestion conflicts with the house conventions in the referenced docs, the house conventions win.
 8. Append a `## Report` section to the task file: what changed, files touched, how it was verified, and any open questions.
 
 ## Completion Checklist
